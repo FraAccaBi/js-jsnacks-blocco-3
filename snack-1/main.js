@@ -56,13 +56,14 @@ const automobili = [
     },
 ];
 
-const auto_benzina = automobili.forEach((alimentazione) => {
-        if (alimentazione === 'benzina') {
+const auto_benzina = automobili.filter((marca) => {
+        if (marca === 'Opel') {
             return true;
         }
         return false
     });
+console.log(auto_benzina);
 
-automobili.forEach((automobili) => {
+/* automobili.forEach((automobili) => {
     console.log(automobili.alimentazione);
-});
+}); */
