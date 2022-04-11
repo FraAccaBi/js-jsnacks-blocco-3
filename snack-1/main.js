@@ -56,14 +56,37 @@ const automobili = [
     },
 ];
 
-const auto_benzina = automobili.filter((marca) => {
-        if (marca === 'Opel') {
-            return true;
-        }
-        return false
-    });
-console.log(auto_benzina);
 
-/* automobili.forEach((automobili) => {
-    console.log(automobili.alimentazione);
-}); */
+
+/* for (let alimentazione in automobili) {
+    if (Object.hasOwnProperty.call(automobili, alimentazione)) {
+        const element = automobili[alimentazione];
+        console.log(element);
+    }} */
+
+
+
+const benzina = automobili.filter((automobili) => {
+    if (automobili.alimentazione === 'benzina') {
+        return true;
+    }
+    return false
+});
+
+const diesel = automobili.filter((automobili) => {
+    return automobili.alimentazione === 'diesel'
+})
+
+const ecologiche = automobili.filter((automobili) => {
+    if ((automobili.alimentazione !== 'benzina') && (automobili.alimentazione !== 'diesel')){
+        return true
+    }
+    return false
+})
+
+
+console.log(benzina);
+console.log(diesel);
+console.log(ecologiche);
+
+
