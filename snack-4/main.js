@@ -14,9 +14,9 @@ let persone = [
 
 let eta = persone.filter((persone) => {
     if (persone.eta >= 18) {
-        persone.abilitazione = (`${persone.nome} può guidare`);  
+        persone.abilitazione = (`${persone.nome} ${persone.cognome} può guidare`);  
     } else {
-        persone.abilitazione = (`${persone.nome} non può guidare`); 
+        persone.abilitazione = (`${persone.nome} ${persone.cognome} non può guidare`); 
     }
 })
 console.log(persone);
