@@ -26,7 +26,3 @@ const animali_mammiferi = animali.filter((animali) => {
   return animali.classe === 'mammiferi'
 })
 console.log(animali_mammiferi);
-
-/* const diesel = automobili.filter((automobili) => {
-    return automobili.alimentazione === 'diesel'
-}) */
