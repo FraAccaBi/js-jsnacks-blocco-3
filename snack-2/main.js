@@ -10,9 +10,12 @@ for (let i = 0; i < nomi.length; i++) {
     console.log(iniziale);
     if (iniziale !== iniziale.toUpperCase()){
         nome = `${iniziale.toUpperCase()}${nome.substring(1)}`
+        nomi[i] = nome   
+    } else {
+        nome = `${iniziale}${nome.substring(1).toLowerCase()}`
         nomi[i] = nome
-        
     }
 }
+console.log(nomi);
 
 
